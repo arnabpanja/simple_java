@@ -7798,10 +7798,19 @@ a.anchor-link {
   div.jp-CodeCell div.jp-InputArea-editor {
     overflow-x: auto !important;
   }
+
   div.jp-CodeCell pre {
     white-space: pre !important;
     word-wrap: normal !important;
   }
+
+  @media (max-width: 768px) {
+    div.jp-InputArea-editor {
+      /* This ensures the cell doesn't stretch the whole page */
+      max-width: 100vw; 
+      display: block;
+    }
+  }	
 </style>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
